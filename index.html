@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asssets/style.css">
+    <title>Tombola!</title>
+</head>
+
+<body>
+    <form id="userSelection">
+        <p>Con quante tabelle vuoi giocare?<span> min 1 max 5</span></p>
+        <input type="number" max="5" min="1" required>
+        <button type="submit">Inizia</button>
+    </form>
+    <main>
+        <button id="btn-random">Dammi un numero buono!</button>
+        <div id="container">
+            <div id="mainTable"></div>
+            <div id="userTables">
+                <p>I miei numeri</p>
+            </div>
+        </div>
+    </main>
+    <script src="./asssets/main.js"></script>
+</body>
+
+</html>
