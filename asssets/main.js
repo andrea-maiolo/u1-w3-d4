@@ -33,7 +33,7 @@ const createMainTable = function () {
 const createUserTable = function (inputNum) {
   //get how many tables the user wants to play with
   inputNum = parseInt(inputNum);
-  for (let j = 0; j <= inputNum; j++) {
+  for (let j = 1; j <= inputNum; j++) {
     let currentTable = document.createElement("div");
     currentTable.classList.add("userTable");
     for (let i = 0; i < 24; i++) {
