@@ -10,10 +10,6 @@ const main = document.getElementsByTagName("main")[0];
 //this let user set a number o tables max 5
 const userTableSelection = function (e) {
   e.preventDefault();
-  if (userInput.value === "") {
-    alert("Seleziona un numero");
-    return;
-  }
   main.style.display = "block";
   userSelectioForm.style.display = "none";
   createUserTable(userInput.value);
@@ -73,7 +69,7 @@ const generateRandomNumber = function () {
 
 //crea tabella e inizia eventi
 window.addEventListener("DOMContentLoaded", function () {
-  btnUserSelection.addEventListener("click", userTableSelection);
   createMainTable();
+  userSelectioForm.addEventListener("submit", userTableSelection);
   btnRandom.addEventListener("click", generateRandomNumber);
 });
